@@ -1,0 +1,22 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+""" redis连接配置  """
+REDIS = {
+    "host": "127.0.0.1",
+    "port": 6379,
+    "db": 0,
+}
+
+# redis 中存储的key
+REDISKEY = "gzbus:hemc2"
+# 请求频率
+FREQUENCY = 5
+
+"""Gunicorn setting"""
+bind = "127.0.0.1:9999"
+workers = 1
+worker_class = "gevent"
+accesslog = "-"     # log to stderr
+errorlog = "-"      # log to stderr
+loglevel = "info"

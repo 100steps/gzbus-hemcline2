@@ -13,6 +13,9 @@ import ujson as json
 from Crypto.Cipher import DES
 
 
+ciphers = {}
+
+
 class DESCipher():
     """ DES加解密 """
 

@@ -72,6 +72,7 @@ app.add_route("/{direction}", bus)
 
 
 if __name__ == "__main__":
-    host_port = config.bind.split(":")
-    httpd = simple_server.make_server(host_port[0], int(host_port[1]), app)
+    print "Starting server on ", config.bind
+    host, port = config.bind.split(":")
+    httpd = simple_server.make_server(host, int(port), app)
     httpd.serve_forever()

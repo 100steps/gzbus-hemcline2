@@ -1,8 +1,8 @@
-falcon==0.3.0
-gevent==1.1.0
-gunicorn==19.4.5
-pycrypto==2.6.1
-redis==2.10.5
-requests==2.9.1
-six==1.10.0
-ujson==1.35
+falcon>=0.3.0
+gevent>=1.1.0
+gunicorn>=19.4.5
+pycrypto>=2.6.1
+redis>=2.10.5
+requests>=2.9.1
+ujson>=1.35
+rsa>=3.4.2
